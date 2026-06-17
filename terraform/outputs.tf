@@ -1,5 +1,7 @@
-variable "project_id" {}
+output "vm_name" {
+  value = google_compute_instance.vm.name
+}
 
-variable "region" {
-  default = "us-central1"
+output "vpc_name" {
+  value = google_compute_network.vpc.name
 }
